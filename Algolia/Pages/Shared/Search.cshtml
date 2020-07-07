@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Arama";
+}
+@section Scripts{
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.0.0/dist/algoliasearch-lite.umd.js" integrity="sha256-MfeKq2Aw9VAkaE9Caes2NOxQf6vUa8Av0JqcUXUGkd0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js" integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
+    <script src="~/js/InstantSearch.js"></script>
+}
+<h1>@ViewData["Title"]</h1>
+
+@*
+    Client-side instantsearch.js     
+*@
+<br/>
+<div class="ais-InstantSearch">
+    <h5>Aramak istediğiniz kelimeyi girin</h5>
+
+    <div class="right-panel">
+        <div id="searchbox"></div>
+        <div id="hits"></div>
+        <div id="hits2"></div>
+        <div id="hits3"></div>
+        <div id="pagination"></div>
+    </div>
+</div>
+
